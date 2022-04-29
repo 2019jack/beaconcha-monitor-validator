@@ -7,7 +7,7 @@ In Telegram, create a new bot by sending the ```/newbot``` command to @BotFather
 
 Send a message to your bot, and run this on a terminal: ```curl "https://api.telegram.org/botYOUR_KEY_GOES_HERE/getUpdates"```. Extract the chat ```id```
 
-```Edit lines 3-5 in monitor.nim and set the validators you want to monitor (up to 100), the chat id and telegram token```
+Edit lines 3-5 in monitor.nim and set the validators you want to monitor (up to 100), the chat id and telegram token
 
 Compile ```monitor.nim```. If you have nimbus, you can use the following command: ```the/path/to/nimbus-eth2/env.sh nim -d:ssl c monitor.nim```. This will generate the file ```monitor```
 
