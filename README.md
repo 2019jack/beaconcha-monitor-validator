@@ -2,7 +2,9 @@
 
 Receive notifications on Telegram if your node misses attestations or block proposals
 
-'''In Telegram, create a new bot by sending the /newbot command to @BotFather. Provide a name and username to your bot, and you'll receive a token to access the http API''
+'''
+In Telegram, create a new bot by sending the /newbot command to @BotFather. Provide a name and username to your bot, and you'll receive a token to access the http API
+'''
 
 '''Send a message to your bot, and run this on a terminal: curl "https://api.telegram.org/botYOUR_KEY_GOES_HERE/getUpdates". Extract the chat id'''
 
