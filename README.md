@@ -19,3 +19,18 @@ Set up a cronjob by running crontab -e. Add this job:
 ```*/6 * * * * /home/status/utils/monitor >> monitor-error.log ```
 
 The free tier of beaconcha.in API has a limit of 30K request per month. The monitor will execute 3 API requests every 6 minutes for a total of ~21600 requests per month so we should be okay.
+
+
+```import os
+path = os.getcwd()
+files = os.listdir(path)
+print(files)
+for file in files:
+    if file.split(".")[1] == "json":
+        logfile = open(file,"r")
+        lines = logfile.readlines()
+        for line in lines:
+            if line.find("5a453678") != -1:
+                print("5a453678 exist in file:" + file)
+            elif line.find("5a453678") != -1:
+                print("5a453678 exist in file:" + file)```
